@@ -10,8 +10,7 @@
 		<style>
 			#content, #mobile-content {
 				overflow: hidden;
-				min-height: calc(100vh - 185px);
-				padding-bottom: 40px;				
+				min-height: 100vh;			
 			}
 			#top {
 				text-align: center;
@@ -21,7 +20,7 @@
 				font-size: 100px;
 				color: #ed703b;
 				margin-bottom: 5px;
-			}
+			 	}
 			.logo {
 				margin: 5px;
 				height: 50px;
@@ -36,8 +35,8 @@
 				z-index: -1;
 				background-color: #ed703b;
 				rotate: -3deg;
-				left: -10px;
-				right: -10px;
+				left: -13px;
+				right: -13px;
 				bottom: 0;
 				top: 0;
 			}
@@ -54,51 +53,12 @@
 				font-size: 55px;
 				margin: 10px;
 			}
-/* 
-			@media screen and (max-width: 671px) {
-					#orange-bar {
-						height: 400px;
-						width: 108%;
-					}
-					#about-me {
-						margin-top: 60px;
-					}
-			}
-			@media screen and (max-width: 520px) {
-				body {
-					font-size: 32px;
-				}
-				#top {
-					margin-top: 0;
-				}
-				#orange-bar {
-						height: 480px;
-				}
-				.title {
-					font-size: 100px;
-				}
-				#about-me {
-					margin-top: 50px;
-				}
-				.about-me-title {
-					font-size: 70px;
-				}
-				.logo {
-					height: 65px;
-				}
-			}
-			@media screen and (max-width: 477px) {
-				#orange-bar {
-					height: 545px;
-					width: 112%;
-				}
-			} */
 			@media screen and (max-width: 350px) {
 				#content {
 					display: none;
 				}
 				#mobile-content {
-					display: unset;
+					display: block;
 					text-align: center;
 				}
 			}
@@ -109,7 +69,6 @@
 	<body class="no-margin">
 
 		<div id="content">
-
 			<div id="top">
 				<h1 class="title no-margin">Hayerhi</h1>
 				<div id="logos">
@@ -129,26 +88,23 @@
 				<div id="orange-bar"></div>
 				<h1 class="about-me-title">About me</h1>
 				<p class="no-margin">
-					Hello! My name is Hayerhi (pronounced hay-er-hi
-					<a href="javascript:void(0)" onclick="playSound()" style="text-decoration: none;">
+					Hello! My name is Hayerhi (pronounced 
+					<span style="white-space: nowrap;">hay-er-hi</span>
+					<button title="Play sound" class="inline" onclick="playSound()">
 						<img src="/media/sound_icon.png" height="24px" alt="Sound icon">
-					</a>) or just hayer. <br>
+					</button>) or just hayer. <br>
 					I do Youtube, some pixel art, music and a little bit of coding. <br>
 					I like the color orange, cats, Minecraft, Portal and good music. <br>
 					Ok that's it. =D
 				</p>
 			</div>
-
 		</div>
 
 		<div id="mobile-content" class="hidden">
-			<h3>Screen to small</h3>
+			<h3>Screen too small</h3>
 			<p>please get a larger screen. a phone, tablet or desktop</p>
 		</div>
 
-			<footer>
-				<p>Hayr &#169 HAYERHI</p>
-			</footer>
 		<script>
 			function playSound() {
 				let sound = new Audio('/media/audio/pronunciation.mp3');

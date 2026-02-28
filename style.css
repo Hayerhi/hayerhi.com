@@ -4,7 +4,6 @@ body {
     background-color: #131313;
     color: white;
     text-shadow: black 2px 2px 2px;
-    /* overflow: hidden; */
 }
 .hidden {
     display: none;
@@ -26,4 +25,10 @@ footer {
 footer p {
     font-size: 26px;
     margin: 0;
+}
+
+button.inline {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
