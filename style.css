@@ -6,6 +6,9 @@ body {
     text-shadow: black 2px 2px 2px;
     overflow: hidden;
 }
+.hidden {
+    display: none;
+}
 .no-margin {
     margin: 0;
 }
