@@ -4,7 +4,7 @@ body {
     background-color: #131313;
     color: white;
     text-shadow: black 2px 2px 2px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .hidden {
     display: none;
@@ -19,9 +19,8 @@ body {
 	position: fixed;
 }
 footer {
-    position: absolute;
-    bottom: 5px;
-    width: 100vw;
+    padding-bottom: 10px;
+    margin-top: 100px;
     text-align: center;  
 }
 footer p {

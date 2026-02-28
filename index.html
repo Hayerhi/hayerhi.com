@@ -8,6 +8,11 @@
 		<title>hayerhi.com</title>
 
 		<style>
+			#content {
+				overflow: hidden;
+				min-height: calc(100vh - 185px);
+				padding-bottom: 40px;				
+			}
 			#top {
 				text-align: center;
 				margin-top: 30px;
@@ -27,16 +32,19 @@
     			height: 60px;
 			}
 			#orange-bar {
+				position: absolute;
 				z-index: -1;
-				margin-top: 25px;
-				width: 106%;
-				height: 350px;
 				background-color: #ed703b;
 				rotate: -3deg;
-				margin-left: -25px;
+				left: -10px;
+				right: -10px;
+				bottom: 0;
+				top: 0;
 			}
 			#about-me {
-				margin-top: 80px;
+				padding: 20px 10px 40px;
+				position: relative;
+				margin-top: 50px;
 				text-align: center;
 			}
 			#about-me a {
@@ -46,7 +54,7 @@
 				font-size: 55px;
 				margin: 10px;
 			}
-
+/* 
 			@media screen and (max-width: 671px) {
 					#orange-bar {
 						height: 400px;
@@ -84,7 +92,7 @@
 					height: 545px;
 					width: 112%;
 				}
-			}
+			} */
 			@media screen and (max-width: 350px) {
 				#content {
 					display: none;
@@ -117,9 +125,8 @@
 				</div>
 			</div>
 
-			<div id="orange-bar" class="fixed"></div>
-
 			<div id="about-me">
+				<div id="orange-bar"></div>
 				<h1 class="about-me-title">About me</h1>
 				<p class="no-margin">
 					Hello! My name is Hayerhi (pronounced hay-er-hi
@@ -132,9 +139,6 @@
 				</p>
 			</div>
 
-			<footer id="footer">
-				<p>&#169 Hayerhi</p>
-			</footer>
 		</div>
 
 		<div id="mobile-content" class="hidden">
@@ -142,6 +146,9 @@
 			<p>please get a larger screen. a phone, tablet or desktop</p>
 		</div>
 
+			<footer>
+				<p>Hayr &#169 HAYERHI</p>
+			</footer>
 		<script>
 			function playSound() {
 				let sound = new Audio('/media/audio/pronunciation.mp3');
