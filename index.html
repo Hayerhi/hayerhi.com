@@ -28,7 +28,7 @@
 			}
 			#orange-bar {
 				z-index: -1;
-				margin-top: 50px;
+				margin-top: 25px;
 				width: 106%;
 				height: 350px;
 				background-color: #ed703b;
@@ -52,8 +52,10 @@
 						height: 400px;
 						width: 108%;
 					}
+					#about-me {
+						margin-top: 60px;
+					}
 			}
-
 			@media screen and (max-width: 520px) {
 				body {
 					font-size: 32px;
@@ -66,6 +68,9 @@
 				}
 				.title {
 					font-size: 100px;
+				}
+				#about-me {
+					margin-top: 50px;
 				}
 				.about-me-title {
 					font-size: 70px;
@@ -117,7 +122,10 @@
 			<div id="about-me">
 				<h1 class="about-me-title">About me</h1>
 				<p class="no-margin">
-					Hello! My name is Hayerhi (pronounced <a href="javascript:void(0)" onclick="playSound()">hay-er-hi</a>) or just hayer. <br>
+					Hello! My name is Hayerhi (pronounced hay-er-hi
+					<a href="javascript:void(0)" onclick="playSound()" style="text-decoration: none;">
+						<img src="/media/sound_icon.png" height="24px" alt="Sound icon">
+					</a>) or just hayer. <br>
 					I do Youtube, some pixel art, music and a little bit of coding. <br>
 					I like the color orange, cats, Minecraft, Portal and good music. <br>
 					Ok that's it. =D
