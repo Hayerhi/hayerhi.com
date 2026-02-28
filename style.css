@@ -4,7 +4,7 @@ body {
     background-color: #131313;
     color: white;
     text-shadow: black 2px 2px 2px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .hidden {
     display: none;
