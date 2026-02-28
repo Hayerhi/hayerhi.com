@@ -1,0 +1,14 @@
+body {
+    font-family: "Outfit", Serif;
+    font-size: 26px;
+    background-color: #131313;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    overflow: hidden;
+}
+.no-margin {
+    margin: 0;
+}
+.absolute {
+	position: absolute;
+}

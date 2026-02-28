@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>index</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit">
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon">
+		<title>hayerhi.com</title>
+
+		<style>
+			#top {
+				text-align: center;
+				margin-top: 30px;
+			}
+			.title {
+				font-size: 100px;
+				color: #ed703b;
+				margin-bottom: 5px;
+			}
+			.logo {
+				margin: 5px;
+				height: 50px;
+			}
+			.logo-anchor {
+				text-decoration: none;
+				display: inline-block;
+    			height: 60px;
+			}
+			#orange-bar {
+				z-index: -1;
+				margin-top: 50px;
+				width: 105%;
+				height: 350px;
+				background-color: #ed703b;
+				rotate: -3deg;
+				margin-left: -25px;
+			}
+			#about-me {
+				margin-top: 100px;
+				text-align: center;
+			}
+			.about-me-title {
+				font-size: 55px;
+				margin: 10px;
+			}
+
+		</style>
+
 	</head>
-	<body>
+	<body class="no-margin">
 
-		<h1>hayerhi.com</h1>
-		<p>heck yeah</p>
+		<div id="top">
+			<h1 class="title no-margin">Hayerhi</h1>
+			<div id="logos">
+				<a href="https://www.youtube.com/@Hayerhi" class="logo-anchor">
+					<img src="/media/logo/youtube.png" alt="Youtube" class="logo">
+				</a>
+				<a href="https://www.twitch.tv/hayerhi" class="logo-anchor">
+					<img src="/media/logo/twitch.png" alt="Twitch" class="logo">
+				</a>
+				<a href="https://www.x.com/hayerhi" class="logo-anchor">
+					<img src="/media/logo/twitter.png" alt="Twitter" class="logo">
+				</a>
+			</div>
+		</div>
 
+		<div id="orange-bar" class="absolute"></div>
+
+		<div id="about-me">
+			<h1 class="about-me-title">About me</h1>
+			<p class="no-margin">
+				Hello! My name is Hayerhi (pronounced hay-er-hi) or just hayer. <br>
+				I do Youtube, some pixel art, music and a little bit of coding. <br>
+				I like the color orange, cats, Minecraft, Portal and good music. <br>
+				Ok that's it. =D
+			</p>
+		</div>
+		
 	</body>
 </html>
