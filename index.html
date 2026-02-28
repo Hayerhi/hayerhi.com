@@ -28,19 +28,49 @@
 			#orange-bar {
 				z-index: -1;
 				margin-top: 50px;
-				width: 105%;
+				width: 110%;
 				height: 350px;
 				background-color: #ed703b;
 				rotate: -3deg;
 				margin-left: -25px;
 			}
 			#about-me {
-				margin-top: 100px;
+				margin-top: 80px;
 				text-align: center;
+			}
+			#about-me a {
+				color: rgb(100, 245, 250);
 			}
 			.about-me-title {
 				font-size: 55px;
 				margin: 10px;
+			}
+
+			@media screen and (max-width: 706px) {
+					#orange-bar {
+						height: 400px;
+					}
+			}
+
+			@media screen and (max-width: 520px) {
+				body {
+					font-size: 32px;
+				}
+				#top {
+					margin-top: 0;
+				}
+				#orange-bar {
+						height: 480px;
+				}
+				.title {
+					font-size: 140px;
+				}
+				.about-me-title {
+					font-size: 70px;
+				}
+				.logo {
+					height: 65px;
+				}
 			}
 
 		</style>
@@ -63,17 +93,29 @@
 			</div>
 		</div>
 
-		<div id="orange-bar" class="absolute"></div>
+		<div id="orange-bar" class="fixed"></div>
 
 		<div id="about-me">
 			<h1 class="about-me-title">About me</h1>
 			<p class="no-margin">
-				Hello! My name is Hayerhi (pronounced hay-er-hi) or just hayer. <br>
+				Hello! My name is Hayerhi (pronounced <a href="javascript:void(0)" onclick="playSound()">hay-er-hi</a>) or just hayer. <br>
 				I do Youtube, some pixel art, music and a little bit of coding. <br>
 				I like the color orange, cats, Minecraft, Portal and good music. <br>
 				Ok that's it. =D
 			</p>
 		</div>
 		
+		<footer id="footer">
+			<p>&#169 Hayerhi</p>
+		</footer>
+
+		<script>
+			function playSound() {
+				let sound = new Audio('/media/audio/pronunciation.mp3');
+				sound.volume = 0.54
+				sound.play();
+			}
+		</script>
+
 	</body>
 </html>

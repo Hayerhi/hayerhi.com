@@ -12,3 +12,15 @@ body {
 .absolute {
 	position: absolute;
 }
+.fixed {
+	position: fixed;
+}
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100vw;
+    text-align: center;  
+}
+footer p {
+    margin: 0;
+}
