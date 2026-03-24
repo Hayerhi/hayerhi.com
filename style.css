@@ -53,3 +53,17 @@ button.inline {
     border: none;
     background-color: transparent;
 }
+
+
+
+
+
+@media screen and (max-width: 350px) {
+    #content {
+        display: none;
+    }
+    #mobile-content {
+        display: block;
+        text-align: center;
+    }
+}
